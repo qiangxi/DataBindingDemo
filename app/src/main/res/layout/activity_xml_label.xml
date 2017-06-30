@@ -2,10 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data class="cn.rqq.customClassName">
+    <data>
 
         <import
-            alias="textUtils"
+            alias="textUtils01"
+            type="android.text.TextUtils"/>
+
+        <import
+            alias="textUtils02"
             type="android.text.TextUtils"/>
 
         <variable
@@ -14,7 +18,8 @@
 
         <variable
             name="tag"
-            type="String"/>
+            type="java.lang.String"/>
+
     </data>
 
     <LinearLayout
@@ -24,6 +29,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            android:onClick="@{() -> presenter.onViewClick()}"/>
     </LinearLayout>
 </layout>

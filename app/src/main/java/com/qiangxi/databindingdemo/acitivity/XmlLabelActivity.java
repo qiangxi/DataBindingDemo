@@ -22,6 +22,10 @@ public class XmlLabelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_xml_label);
         mBinding.setPresenter(this);
+    }
+
+
+    public void onViewClick(){
 
     }
 }
