@@ -17,29 +17,13 @@
             type="String"/>
     </data>
 
-    <data>
-
-        <import
-            alias="textUtils"
-            type="android.text.TextUtils"/>
-
-        <variable
-            name="presenter"
-            type="com.qiangxi.databindingdemo.acitivity.XmlLabelActivity"/>
-
-        <variable
-            name="tag"
-            type="String"/>
-    </data>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <fragment
-            android:id="@+id/fragment"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="50dp"/>
     </LinearLayout>
 </layout>
