@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import
+            alias="textUtils"
+            type="android.text.TextUtils"/>
+
+        <variable
+            name="presenter"
+            type="com.qiangxi.databindingdemo.acitivity.XmlLabelActivity"/>
+        <variable
+            name="tag"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@{tag}"/>
+    </LinearLayout>
+</layout>
