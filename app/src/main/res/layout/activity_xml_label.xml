@@ -11,6 +11,22 @@
         <variable
             name="presenter"
             type="com.qiangxi.databindingdemo.acitivity.XmlLabelActivity"/>
+
+        <variable
+            name="tag"
+            type="String"/>
+    </data>
+
+    <data>
+
+        <import
+            alias="textUtils"
+            type="android.text.TextUtils"/>
+
+        <variable
+            name="presenter"
+            type="com.qiangxi.databindingdemo.acitivity.XmlLabelActivity"/>
+
         <variable
             name="tag"
             type="String"/>
@@ -24,7 +40,6 @@
         <fragment
             android:id="@+id/fragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:tag="@{tag}"/>
+            android:layout_height="match_parent"/>
     </LinearLayout>
 </layout>
