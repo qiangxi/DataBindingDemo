@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.qiangxi.databindingdemo.R;
 import com.qiangxi.databindingdemo.databinding.ActivityConversionDemoBinding;
+import com.qiangxi.databindingdemo.entity.User;
 
 public class ConversionDemoActivity extends AppCompatActivity {
     private ActivityConversionDemoBinding binding;
@@ -15,5 +16,7 @@ public class ConversionDemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_conversion_demo);
         binding.setIsTrue(true);
+        User user = new User();
+        String all = user.getAll();
     }
 }

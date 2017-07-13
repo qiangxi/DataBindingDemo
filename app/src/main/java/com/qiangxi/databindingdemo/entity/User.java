@@ -49,4 +49,9 @@ public class User extends BaseObservable {
         isStudent = student;
         notifyPropertyChanged(com.qiangxi.databindingdemo.BR.student);
     }
+
+    @Bindable({"name", "age", "sex", "isStudent"})
+    public String getAll() {
+        return "姓名:" + name + ",年龄=" + age + "，性别：" + sex + "，是不是学生=" + isStudent;
+    }
 }

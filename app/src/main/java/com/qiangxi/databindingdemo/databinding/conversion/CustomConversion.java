@@ -6,6 +6,7 @@ import android.util.Log;
 
 /**
  * Created by 任强强 on 2017/7/11.
+ * 自定义转换器
  */
 
 public class CustomConversion {
@@ -28,6 +29,4 @@ public class CustomConversion {
     public static ColorDrawable convertColorToDrawable03(int color) {
         return new ColorDrawable(0x65789951);
     }
-
-
 }
