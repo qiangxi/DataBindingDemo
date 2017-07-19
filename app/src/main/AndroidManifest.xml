@@ -11,13 +11,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".acitivity.MainActivity">
         </activity>
-        <activity android:name=".acitivity.XmlLabelActivity"/>
-        <activity android:name=".acitivity.ConversionDemoActivity">
+        <activity android:name=".acitivity.XmlLabelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".acitivity.ConversionDemoActivity">
+
         </activity>
         <activity android:name=".acitivity.BindingMethodsDemoActivity">
         </activity>

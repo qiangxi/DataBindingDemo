@@ -20,6 +20,12 @@
             name="tag"
             type="java.lang.String"/>
 
+        <import type="com.qiangxi.databindingdemo.databinding.method.InverseMethodDemo"/>
+
+        <variable
+            name="orderTypeCode"
+            type="String"/>
+
     </data>
 
     <LinearLayout
@@ -31,5 +37,30 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:onClick="@{() -> presenter.onViewClick()}"/>
+
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_horizontal"
+            android:text="@={InverseMethodDemo.orderTypeToString(orderTypeCode)}"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="点击"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click01"
+            android:text="点击"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click02"
+            android:text="点击"/>
     </LinearLayout>
 </layout>
