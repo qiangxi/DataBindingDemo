@@ -12,16 +12,18 @@
         <activity android:name=".acitivity.MainActivity">
         </activity>
         <activity android:name=".acitivity.XmlLabelActivity">
+
+        </activity>
+        <activity android:name=".acitivity.ConversionDemoActivity">
+        </activity>
+        <activity android:name=".acitivity.BindingMethodsDemoActivity">
+        </activity>
+        <activity android:name=".acitivity.TwoWayBindingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".acitivity.ConversionDemoActivity">
-
-        </activity>
-        <activity android:name=".acitivity.BindingMethodsDemoActivity">
         </activity>
     </application>
 
